@@ -1,3 +1,20 @@
-.img{
-width: 100px;
+.img {
+    width: 100px;
 }
+.img:hover{
+    filter: blur(5px);
+}
+
+.carousel-item {
+    height: 55vh;
+    font-size: 30px; 
+
+}
+
+.carousel-item h5{
+    font-size: 50px;
+    background-color: rgb(46, 84, 250);
+    opacity: 0.4;
+    
+}
+
