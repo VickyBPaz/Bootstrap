@@ -23,6 +23,7 @@
     font-size: 50px;
     background-color: rgb(46, 84, 250);
     opacity: 0.4;
+    color: #fff;
 
 }
 
@@ -37,10 +38,9 @@ background-image: linear-gradient(160deg, #3e63f2 0%, #9db6e5 73%);
 }
 
 .card a {
+    color: #fff;
     background-color: #0b51e5;
     background-image: linear-gradient(49deg, #0b51e5 0%, #90ccf0 71%);
-
-
 }
 
 .card img:hover {
@@ -55,6 +55,66 @@ background-image: linear-gradient(160deg, #3e63f2 0%, #9db6e5 73%);
 
 .h5 {
     padding: 2rem;
+}
+
+/* footer */
+
+.footer{
+
+    width: 25vh;
+    font-family: "Open Sans";
+    padding-top: 40px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #111;
+    color: #fff;
+    opacity: 70%;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px suto;
+    line-height: 28px;
+    font-size: 1rem;
+} 
+
+.redes{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1 rem 0 ;
+}
+.redes li{
+margin: 0 10px;
+}
+
+.redes a{
+    text-decoration: none;
+    color: #fff;
+}
+.redes a:hover i{
+color: aqua;
+}
+
+.fondo-footer{
+    background: #111;
+    opacity: 80%;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
 }
 
 /* DISEÑO FORMULARIO DE CONTACTO */
