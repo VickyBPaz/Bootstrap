@@ -25,14 +25,16 @@
     opacity: 0.4;
 
 }
+/* Cards con Servicios */
 
-
-/* footer */
-.imgFooter {
-    max-width: 3rem;
-    margin-top: 3rem;
+.row {
+    display: flex;
+    
 
 }
+
+/* footer */
+
 
 .card-body {
     display: flex;
@@ -47,10 +49,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.footer {
-    height: 25vw;
-
-}
 
 /* DISEÑO FORMULARIO DE CONTACTO */
 .header {
@@ -69,8 +67,4 @@
 }
 .btn {
     margin-top: 2rem;
-}
-
-.fieldset element{
-    margin: auto;
 }
