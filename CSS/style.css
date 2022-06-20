@@ -124,10 +124,15 @@ color: aqua;
     padding: 10px;
 }
 
-
+.form-group {
+    
+}
 .bigicon {
-    font-size: 35px;
+    font-size: 30px;
     color: #36A0FF;
+    justify-content: center;
+
+    
 }
 
 .contacto {
