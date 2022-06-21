@@ -152,32 +152,46 @@
     }
 
     /* DISEÑO FORMULARIO DE CONTACTO */
-    .header {
-        margin-top: 3rem;
-        color: #36A0FF;
-        font-size: 27px;
-        padding-top: 10px;
-    }
-
-    /* iconos del form */
-
-    .contacto {
-        background-color: rgb(76, 89, 92);
-        padding: 0;
-    }
-
-    .form-group {
-        max-width: 1000px;
+    
+    .form {
+        grid-area: form;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 50vh;
+    }
+    .form h3 {
+        font-size: 2rem;
+        margin: 2rem;
+
+    }
+    .form div {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+    }
+    .form input {
+        height: 2.5rem;
+        width: 350px;
+        border-radius: 15px;
+        background-color: #c6c6c6;
+        text-align: center;
+        margin-top: 1rem;
+
     }
 
-    .btn {
-        margin-top: 2rem;
-        animation: cambioColor;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-
+    .form input[submit]:hover{
+        background-color: #111;
+        color: #fff;
     }
+    
+
+
+
+    /* media queries */
+    @media (max-width: )
+
+    
 
     /* Animaciones - keyframes */
     @keyframes cambioColor {
