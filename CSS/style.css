@@ -33,181 +33,202 @@
 }
 
 .carousel-item h6 {
-        font-size: 50px;
-        color: rgba(24, 2, 2, 0.863);
-        background-color: #fff;
-        opacity: 0.4;
+    font-size: 50px;
+    color: rgba(24, 2, 2, 0.863);
+    background-color: #fff;
+    opacity: 0.4;
 
+}
+
+/* Cards con Servicios */
+
+.card {
+    margin: 10px;
+    border-radius: 30px;
+    border: 2px solid rgba(14, 55, 131, 0.404);
+}
+
+.card a {
+    color: #fff;
+    background-color: #0b51e5;
+    background-image: linear-gradient(49deg, #0b51e5 0%, #90ccf0 71%);
+
+}
+
+.card img:hover {
+    filter: opacity(.8);
+
+}
+
+.card img {
+    height: 220px;
+    margin-top: 1rem;
+}
+
+.card-title {
+    padding: 1rem;
+    border: dotted 2px rgba(14, 55, 131, 0.404);
+
+}
+
+/* boton de las cards */
+.btn:hover {
+    transform: scale(1, 1.1);
+    transition: opacity 1;
+    transition: 3seg;
+
+}
+
+.btn:focus {
+    background: rgba(2, 7, 24, 0.123);
+    color: rgb(5, 151, 170);
+    font-weight: 3px;
+}
+
+/* footer */
+
+.footer {
+    width: 25vh;
+    font-family: "Open Sans";
+    padding-top: 40px;
+}
+
+.footer-content {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #111;
+    color: #fff;
+    opacity: 70%;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+
+
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px suto;
+    line-height: 28px;
+    font-size: 1rem;
+}
+
+.redes {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1 rem 0;
+}
+
+.redes li {
+    margin: 0 10px;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.redes a:hover i {
+    color: aqua;
+}
+
+.fondo-footer {
+    background: #111;
+    opacity: 80%;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+/* DISEÑO FORMULARIO DE CONTACTO */
+.form {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.form h3 {
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+.form input {
+    height: 2.5rem;
+    width: 350px;
+    border-radius: 15px;
+    background-color: #c6c6c6;
+    text-align: center;
+    margin-top: 1rem;
+
+}
+
+.form input:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+.submit {
+    animation-name: cambioColor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+/* Animaciones - keyframes */
+@keyframes cambioColor {
+    0% { 
+        background-color: rgb(0, 17, 255);
     }
 
-    /* Cards con Servicios */
-
-    .card {
-        margin: 10px;
-        border-radius: 30px;
-        border: 2px solid rgba(14, 55, 131, 0.404);
+    25% {
+        background-color: aquamarine;
     }
 
-    .card a {
-        color: #fff;
-        background-color: #0b51e5;
-        background-image: linear-gradient(49deg, #0b51e5 0%, #90ccf0 71%);
-
+    50% {
+        background-color: rgb(90, 126, 247);
+        
     }
 
-    .card img:hover {
-        filter: opacity(.8);
+    100% {
+        background-color: rgb(38, 88, 226);
+    }
+}
 
+/* responsive designe media queries mobile last */
+/* mobile last - max-widht */
+
+@media (max-width:768px) 
+{
+    .carousel-item h5{
+    font-size: 15px;
+    background-color: rgb(46, 84, 250);
+    opacity: 0.4;
+    color: #fff;
+    }
+    .carousel-inner{
+        overflow: auto;
+    }
+    .d-none{
+        display: none!important;
     }
 
-    .card img {
-        height: 220px;
-        margin-top: 1rem;
-    }
-
-    .card-title {
-        padding: 1rem;
-        border: dotted 2px rgba(14, 55, 131, 0.404);
-
-    }
-
-    /* boton de las cards */
-    .btn:hover {
-        transform: scale(1, 1.1);
-        transition: opacity 1;
-        transition: 3seg;
-
-    }
-
-    .btn:focus {
-        background: rgba(2, 7, 24, 0.123);
-        color: rgb(5, 151, 170);
-        font-weight: 3px;
-    }
-
-    /* footer */
-
-    .footer {
-        width: 25vh;
-        font-family: "Open Sans";
-        padding-top: 40px;
-    }
-
-    .footer-content {
-        margin-top: 4rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        background: #111;
-        color: #fff;
-        opacity: 70%;
-    }
-
-    .footer-content h3 {
-        font-size: 1.8rem;
-        font-weight: 400;
-        text-transform: capitalize;
-        line-height: 3rem;
-
-
-    }
-
-    .footer-content p {
-        max-width: 500px;
-        margin: 10px suto;
-        line-height: 28px;
-        font-size: 1rem;
-    }
-
-    .redes {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 1rem 0 1 rem 0;
-    }
-
-    .redes li {
-        margin: 0 10px;
-    }
-
-    .redes a {
-        text-decoration: none;
-        color: #fff;
-    }
-
-    .redes a:hover i {
-        color: aqua;
-    }
-
-    .fondo-footer {
-        background: #111;
-        opacity: 80%;
-        width: 100vw;
-        padding: 20px 0;
-        text-align: center;
-        color: #fff;
-    }
-
-    /* DISEÑO FORMULARIO DE CONTACTO */
-    
-    .form {
-        grid-area: form;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-height: 50vh;
-    }
-    .form h3 {
-        font-size: 2rem;
-        margin: 2rem;
-
-    }
-    .form div {
-        display: flex;
-        flex-direction: column;
-        margin: 3rem;
-    }
-    .form input {
-        height: 2.5rem;
-        width: 350px;
-        border-radius: 15px;
-        background-color: #c6c6c6;
-        text-align: center;
-        margin-top: 1rem;
-
-    }
-
-    .form input[submit]:hover{
-        background-color: #111;
-        color: #fff;
-    }
-    
-
-
-
-    /* media queries */
-    @media (max-width: )
-
-    
-
-    /* Animaciones - keyframes */
-    @keyframes cambioColor {
-        0% {
-            background-color: rgb(2, 24, 16);
-        }
-
-        25% {
-            background-color: rgb(63, 66, 68);
-        }
-
-        50% {
-            background-color: #2c4fc4e7;
-        }
-
-        100% {
-            background-color: #111;
-        }
-    }
+}
